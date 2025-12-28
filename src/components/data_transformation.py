@@ -23,7 +23,7 @@ class DataTransformation:
     def __init__(self):
         self.data_transformation_config = DataTransformationConfig()
         
-    def get_data_transformer_object(self):
+    def initiate_model_trainer(self):
         '''
         This function is responsible for data transformation 
         '''
@@ -67,7 +67,7 @@ class DataTransformation:
             
             logging.info('Obtaining Preprocessing object')
             
-            preprocessing_obj=self.get_data_transformer_object()
+            preprocessing_obj=self.initiate_model_trainer()
             
             target_column_name='math_score'
             numerical_columns = ['writing_score','reading_score']
