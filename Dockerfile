@@ -8,6 +8,8 @@ RUN apt-get update -y \
     && apt-get install -y --no-install-recommends awscli \
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN python -m pip install --upgrade pip \
+    && pip install --default-timeout=1000 --no-cache-dir -r requirements.txt
+
 
 CMD ["python3", "app.py"]

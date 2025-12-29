@@ -2,10 +2,12 @@ pandas
 numpy
 seaborn
 matplotlib
+Flask 
 
 scikit-learn
-catboost
-xgboost
+xgboost==2.1.1   # CPU version, light weight
+catboost==1.2.3
+
 dill
 
 -e .
