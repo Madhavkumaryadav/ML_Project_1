@@ -83,3 +83,43 @@ ML_Project_1/
 ```bash
 git clone https://github.com/Madhavkumaryadav/ML_Project_1.git
 cd ML_Project_1python -m venv venv
+
+Activate Virtual environement :
+Windows: venv\Scripts\activate
+macOS/Linux: source venv/bin/activate
+
+3️⃣ Install Dependencies
+pip install -r requirements.txt
+
+4️⃣ Run Flask App
+python app.py
+
+
+Then open your browser and go to:
+
+http://127.0.0.1:5000
+
+Usage
+Open browser
+Enter student details (gender, race_ethnicity, parental education, etc.)
+Click “Predict”
+See the predicted math score
+📦 Model Training & Retraining (Optional)
+If training script exists in this repo (train_pipeline.py / notebook):
+Perform preprocessing → transformation
+Train best model
+Save artifacts to artifacts/
+The Flask app uses these .pkl files to make predictions
+The PredictPipeline class loads these artifacts and performs consistent transformation and prediction.
+❤️ Contributing
+
+
+Contributions are welcome!
+If you want to:
+
+✔ Fix bugs
+✔ Improve interface
+✔ Add model performance metrics
+✔ Extend CI/CD or deployment
+
+…please open an issue or pull request.
