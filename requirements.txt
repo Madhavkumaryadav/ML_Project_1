@@ -8,6 +8,14 @@ scikit-learn
 xgboost==2.1.1   # CPU version, light weight
 catboost==1.2.3
 
+streamlit
+scikit-learn
+joblib
+xgboost          # ← use this instead
+lightgbm         # ← or this
+python-multipart
+pymongo
+# catboost       # ← comment out or remove
 dill
 
--e .
+# -e .
